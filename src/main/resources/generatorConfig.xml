@@ -1,0 +1,417 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE generatorConfiguration
+        PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN"
+        "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd">
+
+<generatorConfiguration>
+
+    <context id="mysqlTables" targetRuntime="MyBatis3">
+
+        <jdbcConnection driverClass="com.mysql.jdbc.Driver" connectionURL="jdbc:mysql://121.42.238.128:3306/jihex_base"
+                        userId="hotel" password="internet"/>
+
+
+        <javaTypeResolver>
+            <property name="forceBigDecimals" value="false"/>
+        </javaTypeResolver>
+
+        <javaModelGenerator targetPackage="com.jihelife.pojo" targetProject="src/main/java/">
+            <property name="enableSubPackages" value="true"/>
+        </javaModelGenerator>
+
+        <sqlMapGenerator targetPackage="com.jihelife.mapper" targetProject="src/main/resources/">
+            <property name="enableSubPackages" value="true"/>
+        </sqlMapGenerator>
+
+        <javaClientGenerator type="XMLMAPPER" targetPackage="com.jihelife.mapper" targetProject="src/main/java">
+            <property name="enableSubPackages" value="true"/>
+        </javaClientGenerator>
+
+<!--
+        <table tableName="dict_holiday" domainObjectName="DictHoliday"
+               enableCountByExample="true" enableUpdateByExample="true"
+               enableDeleteByExample="true" enableSelectByExample="true"
+               selectByExampleQueryId="true"  >
+            <ignoreColumn column="id" delimitedColumnName=""/>
+        </table>-->
+
+        <!--<table tableName="dict_city" domainObjectName="DictCity"
+               enableCountByExample="true" enableUpdateByExample="true"
+               enableDeleteByExample="true" enableSelectByExample="true"
+               selectByExampleQueryId="true"  >
+            <ignoreColumn column="id" delimitedColumnName=""/>
+        </table>
+
+        <table tableName="dict_province" domainObjectName="DictProvince"
+               enableCountByExample="true" enableUpdateByExample="true"
+               enableDeleteByExample="true" enableSelectByExample="true"
+               selectByExampleQueryId="true"  >
+        </table>
+-->
+<!--        <table tableName="t_sms_template" domainObjectName="TSmsTemplate"
+               enableCountByExample="true" enableUpdateByExample="true"
+               enableDeleteByExample="true" enableSelectByExample="true"
+               selectByExampleQueryId="true"  >
+        </table>
+
+
+        <table tableName="t_sms_signature" domainObjectName="TSmsSignature"
+               enableCountByExample="true" enableUpdateByExample="true"
+               enableDeleteByExample="true" enableSelectByExample="true"
+               selectByExampleQueryId="true"  >
+            <ignoreColumn column="signature_id" delimitedColumnName=""/>
+        </table>
+
+        <table tableName="t_sms_record" domainObjectName="TSmsRecord"
+               enableCountByExample="true" enableUpdateByExample="true"
+               enableDeleteByExample="true" enableSelectByExample="true"
+               selectByExampleQueryId="true"  >
+            <ignoreColumn column="record_id" delimitedColumnName=""/>
+        </table>-->
+
+<!--
+
+        <table tableName="t_sms_template" domainObjectName="TSmsTemplate"
+               enableCountByExample="true" enableUpdateByExample="true"
+               enableDeleteByExample="true" enableSelectByExample="true"
+               selectByExampleQueryId="true"  >
+            <ignoreColumn column="template_id" delimitedColumnName=""/>
+        </table>
+-->
+
+        <!--
+        <table tableName="dict_holiday" domainObjectName="HolidayInfo"
+               enableCountByExample="true" enableUpdateByExample="true"
+               enableDeleteByExample="true" enableSelectByExample="true"
+               selectByExampleQueryId="true"  >
+            <ignoreColumn column="id" delimitedColumnName=""/>
+        </table>
+        -->
+
+        <!--
+        <table tableName="dict_bank" domainObjectName="DictBankInfo"
+               enableCountByExample="true" enableUpdateByExample="true"
+               enableDeleteByExample="true" enableSelectByExample="true"
+               selectByExampleQueryId="true"  >
+        </table>
+        -->
+        <!--
+        <table tableName="base_hotel_info" domainObjectName="BaseHotelInfo"
+               enableCountByExample="true" enableUpdateByExample="true"
+               enableDeleteByExample="true" enableSelectByExample="true"
+               selectByExampleQueryId="true"  >
+               <ignoreColumn column="brand_id" delimitedColumnName=""/>
+               <ignoreColumn column="hotel_ename" delimitedColumnName=""/>
+               <ignoreColumn column="hotel_imgs" delimitedColumnName=""/>
+               <ignoreColumn column="first_group_id" delimitedColumnName=""/>
+               <ignoreColumn column="second_group" delimitedColumnName=""/>
+               <ignoreColumn column="phone" delimitedColumnName=""/>
+               <ignoreColumn column="country_code" delimitedColumnName=""/>
+               <ignoreColumn column="provice_id" delimitedColumnName=""/>
+               <ignoreColumn column="city_id" delimitedColumnName=""/>
+               <ignoreColumn column="city_name" delimitedColumnName=""/>
+               <ignoreColumn column="zone" delimitedColumnName=""/>
+               <ignoreColumn column="address" delimitedColumnName=""/>
+               <ignoreColumn column="loc_lat" delimitedColumnName=""/>
+               <ignoreColumn column="loc_lon" delimitedColumnName=""/>
+               <ignoreColumn column="brief" delimitedColumnName=""/>
+            <ignoreColumn column="facility" delimitedColumnName=""/>
+            <ignoreColumn column="level" delimitedColumnName=""/>
+            <ignoreColumn column="top_index" delimitedColumnName=""/>
+            <ignoreColumn column="status" delimitedColumnName=""/>
+            <ignoreColumn column="hasfix" delimitedColumnName=""/>
+            <ignoreColumn column="update_time" delimitedColumnName=""/>
+            <ignoreColumn column="create_time" delimitedColumnName=""/>
+            <ignoreColumn column="old_id" delimitedColumnName=""/>
+            <ignoreColumn column="owner_id" delimitedColumnName=""/>
+            <ignoreColumn column="union_order_default" delimitedColumnName=""/>
+            <ignoreColumn column="union_order_statistic" delimitedColumnName=""/>
+            <ignoreColumn column="contact" delimitedColumnName=""/>
+            <ignoreColumn column="pms_type" delimitedColumnName=""/>
+            <ignoreColumn column="pms_account" delimitedColumnName=""/>
+            <ignoreColumn column="pms_password" delimitedColumnName=""/>
+            <ignoreColumn column="pms_innid" delimitedColumnName=""/>
+            <ignoreColumn column="pms_last_spider_time" delimitedColumnName=""/>
+        </table>
+        -->
+        <!--
+        <table tableName="product_base_info" domainObjectName="BaseProductInfo"
+               enableCountByExample="true" enableUpdateByExample="true"
+               enableDeleteByExample="true" enableSelectByExample="true"
+               selectByExampleQueryId="true"  >
+        </table>
+        -->
+        <!--
+        <table tableName="base_agreement_info" domainObjectName="BaseAgreementInfo"
+               enableCountByExample="true" enableUpdateByExample="true"
+               enableDeleteByExample="true" enableSelectByExample="true"
+               selectByExampleQueryId="true"  >
+               <generatedKey column="id" sqlStatement="MySql" identity="true"/>
+               <ignoreColumn column="update_time" delimitedColumnName=""/>
+        </table>
+        -->
+        <!--
+        <table tableName="us_login_status" domainObjectName="UserLoginStatus"
+               enableCountByExample="true" enableUpdateByExample="true"
+               enableDeleteByExample="true" enableSelectByExample="true"
+               selectByExampleQueryId="true"  >
+        </table>
+        -->
+
+        <!--
+        <table tableName="coupon_base_info" domainObjectName="CouponBaseInfo"
+               enableCountByExample="true" enableUpdateByExample="true"
+               enableDeleteByExample="true" enableSelectByExample="true"
+               selectByExampleQueryId="true"  >
+            <generatedKey column="coupon_id" sqlStatement="MySql" identity="true"/>
+            <ignoreColumn column="update_time" delimitedColumnName=""/>
+        </table>
+        -->
+        <!--
+        <table tableName="coupon_hotel_product" domainObjectName="CouponHotelProduct"
+               enableCountByExample="true" enableUpdateByExample="true"
+               enableDeleteByExample="true" enableSelectByExample="true"
+               selectByExampleQueryId="true"  >
+            <ignoreColumn column="update_time" delimitedColumnName=""/>
+        </table>
+        -->
+        <!--
+        <table tableName="coupon_use_condition" domainObjectName="CouponUseCondition"
+               enableCountByExample="true" enableUpdateByExample="true"
+               enableDeleteByExample="true" enableSelectByExample="true"
+               selectByExampleQueryId="true"  >
+            <ignoreColumn column="update_time" delimitedColumnName=""/>
+        </table>
+        -->
+        <!--
+        <table tableName="coupon_grant_info" domainObjectName="CouponGrantInfo"
+               enableCountByExample="true" enableUpdateByExample="true"
+               enableDeleteByExample="true" enableSelectByExample="true"
+               selectByExampleQueryId="true"  >
+            <ignoreColumn column="update_time" delimitedColumnName=""/>
+        </table>
+        -->
+        <!--
+        <table tableName="coupon_usage_info" domainObjectName="CouponUsageInfo"
+               enableCountByExample="true" enableUpdateByExample="true"
+               enableDeleteByExample="true" enableSelectByExample="true"
+               selectByExampleQueryId="true"  >
+            <ignoreColumn column="update_time" delimitedColumnName=""/>
+        </table>
+        -->
+        <!--
+        <table tableName="coupon_usage_record" domainObjectName="CouponUsageRecord"
+               enableCountByExample="true" enableUpdateByExample="true"
+               enableDeleteByExample="true" enableSelectByExample="true"
+               selectByExampleQueryId="true"  >
+            <ignoreColumn column="update_time" delimitedColumnName=""/>
+        </table>
+        -->
+        <!--
+        <table tableName="coupon_combo_card_info" domainObjectName="ComboCardInfo"
+               enableCountByExample="true" enableUpdateByExample="true"
+               enableDeleteByExample="true" enableSelectByExample="true"
+               selectByExampleQueryId="true"  >
+            <ignoreColumn column="update_time" delimitedColumnName=""/>
+        </table>
+        -->
+        <!--
+        <table tableName="coupon_payment_ratio" domainObjectName="CouponPaymentRatio"
+               enableCountByExample="true" enableUpdateByExample="true"
+               enableDeleteByExample="true" enableSelectByExample="true"
+               selectByExampleQueryId="true"  >
+               <generatedKey column="id" sqlStatement="MySql" identity="true"/>
+               <ignoreColumn column="update_time" delimitedColumnName=""/>
+        </table>
+        -->
+        <!--
+        <table tableName="coupon_checkoff_record" domainObjectName="CouponCheckoffRecord"
+               enableCountByExample="true" enableUpdateByExample="true"
+               enableDeleteByExample="true" enableSelectByExample="true"
+               selectByExampleQueryId="true"  >
+            <ignoreColumn column="update_time" delimitedColumnName=""/>
+        </table>
+        -->
+
+        <!--
+        <table tableName="charge_record_info" domainObjectName="ChargeRecordInfo"
+               enableCountByExample="true" enableUpdateByExample="true"
+               enableDeleteByExample="true" enableSelectByExample="true"
+               selectByExampleQueryId="true"  >
+               <ignoreColumn column="update_time" delimitedColumnName=""/>
+        </table>
+        -->
+
+        <!--
+        <table tableName="v_coupon_stat_by_user" domainObjectName="CouponStatInfo"
+               enableCountByExample="true" enableUpdateByExample="true"
+               enableDeleteByExample="true" enableSelectByExample="true"
+               selectByExampleQueryId="true"  >
+        </table>
+        -->
+        <!--
+        <table tableName="coupon_jihestock_limit" domainObjectName="CouponJiheStockLimit"
+               enableCountByExample="true" enableUpdateByExample="true"
+               enableDeleteByExample="true" enableSelectByExample="true"
+               selectByExampleQueryId="true"  >
+            <ignoreColumn column="update_time" delimitedColumnName=""/>
+        </table>
+        -->
+        <!--
+        <table tableName="external_order_info" domainObjectName="ExternalOrderInfo"
+               enableCountByExample="true" enableUpdateByExample="true"
+               enableDeleteByExample="true" enableSelectByExample="true"
+               selectByExampleQueryId="true"  >
+            <ignoreColumn column="update_time" delimitedColumnName=""/>
+        </table>
+        -->
+
+        <!--
+        <table tableName="accounting_bank_info" domainObjectName="AccountingBankInfo"
+               enableCountByExample="true" enableUpdateByExample="true"
+               enableDeleteByExample="true" enableSelectByExample="true"
+               selectByExampleQueryId="true"  >
+            <ignoreColumn column="update_time" delimitedColumnName=""/>
+        </table>
+        -->
+
+        <!--
+        <table tableName="accounting_detail_info_new" domainObjectName="AccountingDetailInfo"
+               enableCountByExample="true" enableUpdateByExample="true"
+               enableDeleteByExample="true" enableSelectByExample="true"
+               selectByExampleQueryId="true"  >
+            <generatedKey column="id" sqlStatement="MySql" identity="true"/>
+            <ignoreColumn column="update_time" delimitedColumnName=""/>
+        </table>
+        -->
+        <!--
+        <table tableName="accounting_item_info" domainObjectName="AccountingItemInfo"
+               enableCountByExample="true" enableUpdateByExample="true"
+               enableDeleteByExample="true" enableSelectByExample="true"
+               selectByExampleQueryId="true"  >
+        </table>
+        -->
+        <!--
+        <table tableName="accounting_transfer_info_new" domainObjectName="AccountingTransferInfo"
+               enableCountByExample="true" enableUpdateByExample="true"
+               enableDeleteByExample="true" enableSelectByExample="true"
+               selectByExampleQueryId="true"  >
+            <generatedKey column="id" sqlStatement="MySql" identity="true"/>
+            <ignoreColumn column="update_time" delimitedColumnName=""/>
+        </table>
+        -->
+        <!--
+        <table tableName="v_accounting_account_stat_year_new" domainObjectName="AccountingStatInfo"
+               enableCountByExample="true" enableUpdateByExample="true"
+               enableDeleteByExample="true" enableSelectByExample="true"
+               selectByExampleQueryId="true"  >
+        </table>
+        -->
+
+        <!--
+        <table tableName="member_bnb_union_info" domainObjectName="BnbUnionInfo"
+               enableCountByExample="true" enableUpdateByExample="true"
+               enableDeleteByExample="true" enableSelectByExample="true"
+               selectByExampleQueryId="true"  >
+        </table>
+        -->
+        <!--
+        <table tableName="member_overview_info" domainObjectName="MemberAccountInfo"
+               enableCountByExample="true" enableUpdateByExample="true"
+               enableDeleteByExample="true" enableSelectByExample="true"
+               selectByExampleQueryId="true">
+               <ignoreColumn column="member_code" delimitedColumnName=""/>
+               <ignoreColumn column="upgrade_time" delimitedColumnName=""/>
+               <ignoreColumn column="grade_expired_time" delimitedColumnName=""/>
+               <ignoreColumn column="nights_grading_lastyear" delimitedColumnName=""/>
+               <ignoreColumn column="points_grading_lastyear" delimitedColumnName=""/>
+               <ignoreColumn column="nights_grading_thisyear" delimitedColumnName=""/>
+               <ignoreColumn column="points_grading_thisyear" delimitedColumnName=""/>
+               <ignoreColumn column="nights_cur_year" delimitedColumnName=""/>
+               <ignoreColumn column="owner_hotelid" delimitedColumnName=""/>
+               <ignoreColumn column="parent_userid" delimitedColumnName=""/>
+               <ignoreColumn column="owner_channel" delimitedColumnName=""/>
+               <ignoreColumn column="update_time" delimitedColumnName=""/>
+               <ignoreColumn column="gift_room_nights_thiscycle" delimitedColumnName=""/>
+               <ignoreColumn column="gift_room_standard_thiscycle" delimitedColumnName=""/>
+               <ignoreColumn column="is_gift_cur_cycle" delimitedColumnName=""/>
+        </table>
+        -->
+        <!--  该表有插入自定义字段
+        <table tableName="member_points_record" domainObjectName="PointsRecordInfo"
+               enableCountByExample="true" enableUpdateByExample="true"
+               enableDeleteByExample="true" enableSelectByExample="true"
+               selectByExampleQueryId="true"  >
+            <generatedKey column="id" sqlStatement="MySql" identity="true"/>
+        </table>
+        -->
+        <!--
+        <table tableName="member_points_exchange_rule" domainObjectName="PointsExchangeRule"
+               enableCountByExample="true" enableUpdateByExample="true"
+               enableDeleteByExample="true" enableSelectByExample="true"
+               selectByExampleQueryId="true"  >
+            <ignoreColumn column="id" delimitedColumnName=""/>
+        </table>
+        -->
+
+        <!--
+        <table tableName="member_charge_record" domainObjectName="ChargeRecordInfo"
+               enableCountByExample="true" enableUpdateByExample="true"
+               enableDeleteByExample="true" enableSelectByExample="true"
+               selectByExampleQueryId="true"  >
+               <ignoreColumn column="update_time" delimitedColumnName=""/>
+        </table>
+        -->
+
+        <!--
+        <table tableName="member_bank_account" domainObjectName="MemberBankAccount"
+               enableCountByExample="true" enableUpdateByExample="true"
+               enableDeleteByExample="true" enableSelectByExample="true"
+               selectByExampleQueryId="true"  >
+            <ignoreColumn column="update_time" delimitedColumnName=""/>
+        </table>
+        -->
+        <!--
+        <table tableName="member_transfer_info" domainObjectName="MemberTransferInfo"
+               enableCountByExample="true" enableUpdateByExample="true"
+               enableDeleteByExample="true" enableSelectByExample="true"
+               selectByExampleQueryId="true"  >
+            <generatedKey column="id" sqlStatement="MySql" identity="true"/>
+            <ignoreColumn column="update_time" delimitedColumnName=""/>
+        </table>
+        -->
+        <!--
+        <table tableName="mshp_project_info" domainObjectName="MshpProjectInfo"
+               enableCountByExample="true" enableUpdateByExample="true"
+               enableDeleteByExample="true" enableSelectByExample="true"
+               selectByExampleQueryId="true"  >
+            <generatedKey column="id" sqlStatement="MySql" identity="true"/>
+            <ignoreColumn column="update_time" delimitedColumnName=""/>
+        </table>
+        -->
+        <!--
+        <table tableName="mshp_card_grade_info" domainObjectName="MshpCardGradeInfo"
+               enableCountByExample="true" enableUpdateByExample="true"
+               enableDeleteByExample="true" enableSelectByExample="true"
+               selectByExampleQueryId="true"  >
+            <ignoreColumn column="update_time" delimitedColumnName=""/>
+        </table>
+        -->
+        <!--
+        <table tableName="mshp_card_equity_info" domainObjectName="MshpCardEquityInfo"
+               enableCountByExample="true" enableUpdateByExample="true"
+               enableDeleteByExample="true" enableSelectByExample="true"
+               selectByExampleQueryId="true"  >
+            <ignoreColumn column="update_time" delimitedColumnName=""/>
+        </table>
+        -->
+        <!--
+        <table tableName="mshp_card_recharge_rule" domainObjectName="MshpCardRechargeRule"
+               enableCountByExample="true" enableUpdateByExample="true"
+               enableDeleteByExample="true" enableSelectByExample="true"
+               selectByExampleQueryId="true"  >
+        </table>
+        -->
+    </context>
+</generatorConfiguration>
